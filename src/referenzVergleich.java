@@ -2,12 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 //Referenzen
 public class referenzVergleich {
+    static int GlobalWert =42;
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         int Wert1 = 42;
-        int Wert2 = 42;
-        if (Wert1 == Wert2) {
+        int Wert2 = GlobalWert;
+        if (Wert1 == GlobalWert) {
             System.out.println("Die Werte sind gleich");
         } else {
             System.out.println("Die Werte sind nicht gleich");
